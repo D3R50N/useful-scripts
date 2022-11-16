@@ -1,0 +1,9 @@
+  audioplayers: ^1.1.0
+  firebase_auth: ^3.10.0
+  firebase_core: ^1.23.0
+  firebase_database: ^9.1.5
+  font_awesome_flutter: ^10.2.1
+  gap: ^2.0.0
+  get: ^4.6.5
+flutter_launcher_icons
+flutter_native_splash:
