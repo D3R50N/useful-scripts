@@ -1,11 +1,13 @@
 # Useful Scripts
 
+***Don't forget to suggest me your ideas of scripts 😉⚡***
+
 ## How to use ?
 
-- Clone the repo or download it
-- Add the path to the cloned/downloaded folder to your %PATH% variable
-- Add also the path to the [shorrcuts/](shortcuts/) folder to your %PATH% variable if you want use short script names
-- Enjoy
+1. ⚡ Clone the repo or download it
+2. 📂 Add the path to the cloned/downloaded folder to your %PATH% variable
+3. 📂 Add also the path to the [shortcuts/](shortcuts/) folder to your %PATH% variable if you want use short script names
+4. ⚡ Enjoy
 
 ``` bash
 # push your repo to github with and without pull and a commit message
