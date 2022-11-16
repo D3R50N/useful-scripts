@@ -46,7 +46,7 @@ else if (args.length === 3) {
 }
 
 // Read the file
-fs.readFile("pubspec.yl", (e, data) => {
+fs.readFile("pubspec.yaml", (e, data) => {
     if (e) {
         log("Error while reading pubspec.yaml");
         return;
@@ -61,7 +61,7 @@ fs.readFile("pubspec.yl", (e, data) => {
     //join the array back into a string
     let newFileContent = fileContentArray.join(`assets:\r\n`);
     //write the new content to the file
-    fs.writeFile("pubspec.yml", newFileContent, (e) => {
+    fs.writeFile("pubspec.yaml", newFileContent, (e) => {
         if (e) {
             log("Error while writing pubspec.yaml");
         }
