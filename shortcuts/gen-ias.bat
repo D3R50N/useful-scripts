@@ -1,0 +1,1 @@
+gen-icon-and-splash

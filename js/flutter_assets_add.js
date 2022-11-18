@@ -5,6 +5,7 @@ const log = require("console").log;
 var assetPath = "assets/";
 //read parameters from command line
 const args = process.argv.slice(2);
+const pubspec = "pubspec.yaml";
 
 
 //help function
@@ -46,9 +47,9 @@ else if (args.length === 3) {
 }
 
 // Read the file
-fs.readFile("pubspec.yaml", (e, data) => {
+fs.readFile(pubspec, (e, data) => {
     if (e) {
-        log("Error while reading pubspec.yaml");
+        log("Error while reading", pubspec);
         return;
     }
     //store the content of the file in a variable
@@ -61,9 +62,9 @@ fs.readFile("pubspec.yaml", (e, data) => {
     //join the array back into a string
     let newFileContent = fileContentArray.join(`assets:\r\n`);
     //write the new content to the file
-    fs.writeFile("pubspec.yaml", newFileContent, (e) => {
+    fs.writeFile(pubspec, newFileContent, (e) => {
         if (e) {
-            log("Error while writing pubspec.yaml");
+            log("Error while writing", pubspec);
         }
     });
 

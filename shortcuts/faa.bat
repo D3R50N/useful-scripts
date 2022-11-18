@@ -1,1 +1,0 @@
-flutter-assets-add.bat %*% 

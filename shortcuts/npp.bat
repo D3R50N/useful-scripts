@@ -1,1 +1,1 @@
-npm-patch.bat
+npm-patch

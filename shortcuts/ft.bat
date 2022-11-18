@@ -1,1 +1,0 @@
-flutter-template.bat
