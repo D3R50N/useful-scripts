@@ -20,9 +20,13 @@ class _CustomFadeWidgetState extends State<CustomFadeWidget> {
   @override
   void initState() {
     Future.delayed(widget.waitBeforeLoad, () {
+    if (mounted) {
       setState(() {
-        isLoaded = true;
+         
+          isLoaded = true;
+        
       });
+    }
     });
     super.initState();
   }

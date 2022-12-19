@@ -20,9 +20,12 @@ class _CustomPopWidgetState extends State<CustomPopWidget> {
   @override
   void initState() {
     Future.delayed(widget.waitBeforeLoad, () {
-      setState(() {
-        isLoaded = true;
+        if (mounted) {
+          setState(() {
+          isLoaded = true;
+        
       });
+        }
     });
     super.initState();
   }
