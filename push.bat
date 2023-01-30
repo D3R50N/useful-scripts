@@ -1,3 +1,4 @@
+@echo off
 git add .
 
 if '%1'=='-p' goto haspull
