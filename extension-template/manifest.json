@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Mon extension",
+  "name": "$name",
   "version": "1.0",
   "description": "Une description",
   "permissions": ["tabs", "<all_urls>", "scripting"],
@@ -14,6 +14,6 @@
   "action": {
     "default_icon": "assets/icon.png",
     "default_popup": "popup.html",
-    "default_title": "Mon extension"
+    "default_title": "$name"
   }
 }

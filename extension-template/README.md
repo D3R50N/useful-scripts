@@ -1,4 +1,4 @@
-# Mon extension
+# $name
 
 ## Aborescence
 
