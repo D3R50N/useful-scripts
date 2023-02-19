@@ -1,0 +1,120 @@
+body {
+    background: #f1f4f3;
+    padding: 0;
+    margin: 0;
+    width: max-content;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.spinner {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    border-left: 3px solid rgba(255, 255, 255, 0);
+    display: none;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.btn-container {
+    padding: 15px;
+    padding-top: 5px;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #31a31f;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    /* width: max-content; */
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: .2s;
+}
+
+#btn:hover {
+    background: #339122;
+}
+
+
+#tool {
+    margin-top: 10px;
+    text-align: center;
+
+    background: rgba(134, 142, 161, 0.175);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img_inner {
+    visibility: hidden;
+}
+
+.option {
+    display: flex;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.option input {
+    margin-right: 5px;
+}
+
+/* change checkbox color */
+input[type="checkbox"]:checked {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    margin-top: 4px;
+    border-radius: 3px;
+    outline: none;
+    background-color: #31a31f;
+}
+
+input[type="checkbox"] {
+    width: 10px;
+    height: 10px;
+    transition: .2s;
+
+}
+
+.muted {
+    color: #6c757d;
+    font-weight: bold;
+    text-align: end;
+    margin-top: 10px;
+    padding-right: 15px;
+
+}
+
+.muted a {
+    color: #23531b;
+    font-weight: bold;
+    margin-left: 2px;
+
+}
