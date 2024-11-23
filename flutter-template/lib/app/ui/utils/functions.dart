@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:PKG/app/ui/utils/colors.dart';
 import 'package:gap/gap.dart';
 
 double height(context) {
@@ -11,7 +10,7 @@ double width(context) {
 }
 
 /// Le logo de l'application
-Widget appBrand() {
+Widget appBrand(BuildContext context) {
   return Row(
     crossAxisAlignment: CrossAxisAlignment.end,
     children: [
@@ -22,32 +21,14 @@ Widget appBrand() {
       const Gap(1),
       Text(
         "Name",
-        style: TextStyle(color: mainColor, fontSize: 18),
+        style: TextStyle(color: Theme.of(context).primaryColor, fontSize: 18),
       ),
       const Gap(3),
       Text(
         "v1.0",
-        style: TextStyle(color: mainColor, fontSize: 10),
+        style: TextStyle(color: Theme.of(context).primaryColor, fontSize: 10),
       ),
     ],
-  );
-}
-
-Widget borderedAvatar({required image}) {
-  return Padding(
-    padding: const EdgeInsets.all(8.0),
-    child: CircleAvatar(
-      backgroundColor: mainColor,
-      radius: 150,
-      child: Padding(
-        padding: const EdgeInsets.all(2.0),
-        child: CircleAvatar(
-          backgroundImage: image,
-          backgroundColor: bgColor,
-          radius: 100,
-        ),
-      ),
-    ),
   );
 }
 
@@ -68,12 +49,12 @@ Future<dynamic> customDialog(
               vertical: height(context) / 3, horizontal: 20),
           child: SizedBox(
             child: Card(
-              color: bgColor,
+              color: Theme.of(context).colorScheme.background,
               borderOnForeground: true,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                   side: BorderSide(
-                    color: mainColor,
+                    color: Theme.of(context).primaryColor,
                     width: 2,
                   )),
               child: Padding(
@@ -92,7 +73,7 @@ Future<dynamic> customDialog(
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
-                            color: mainColor,
+                            color: Theme.of(context).primaryColor,
                           ),
                         ),
                         const Spacer(),

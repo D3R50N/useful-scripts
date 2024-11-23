@@ -1,3 +1,3 @@
 @echo off
-cp "C:\Script\extension-template" -r -i -T .
-node C:\Script\js\ext-temp.js %*%
+xcopy "%DEV%\scripts\extension-template" . /y /s /i /e >NUL
+node %DEV%\scripts\js\ext-temp.js %*%

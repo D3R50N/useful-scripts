@@ -1,2 +1,2 @@
 @echo off
-cp "C:\Script\flutter-template\lib\app\ui\widgets" -r lib\app\ui
+xcopy "%DEV%\scripts\flutter-template\lib\app\ui\widgets" lib\app\ui assets /y /s /i /e >NUL

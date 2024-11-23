@@ -1,0 +1,1 @@
+echo "const cv = document.createElement("canvas");const cx = cv.getContext("2d");document.appendChild(cv);const cb = cv.getBoundingClientRect();const resolution = 1;const cw = cv.width = resolution * cb.width;const ch = cv.height = resolution * cb.height;"

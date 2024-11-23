@@ -1,0 +1,1 @@
+node %DEV%\scripts\folder_cleaner %1

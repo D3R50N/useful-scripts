@@ -1,2 +1,2 @@
 @echo off
-cp "C:\Script\html template" -r -i -T .
+cp "%DEV%\scripts\html template" -r -i -T .

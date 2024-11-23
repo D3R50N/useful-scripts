@@ -10,7 +10,7 @@ const pubspec = "pubspec.yaml";
 
 //help function
 function help() {
-    log("Usage: test.bat [path_to_asset] [flag] [assets_dir]");
+    log("Usage: add-asset [path_to_asset] [flag] [assets_dir]");
     log("Flag:");
     log("-d, --dir");
     log("assets_dir is by default assets/");

@@ -9,11 +9,13 @@ import 'package:PKG/app/ui/pages/login_page/login_page.dart';
 import 'package:PKG/app/ui/pages/settings_page/settings_page.dart';
 import 'package:PKG/app/ui/pages/signup_page/signup_page.dart';
 import 'package:PKG/app/ui/pages/welcome_page/welcome_page.dart';
-import 'package:PKG/app/ui/utils/colors.dart';
+import 'package:PKG/app/ui/theme/data.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 void main() {
+  Animate.restartOnHotReload = true;
   runApp(const MyApp());
 }
 
@@ -23,22 +25,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Default App',
+      title: 'PKG App',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        scaffoldBackgroundColor: bgColor,
-        //  primarySwatch: Colors.blue,
-        fontFamily: "Alexandria",
-        appBarTheme: const AppBarTheme(
-          elevation: 0,
-        ),
-        colorScheme: ColorScheme.fromSwatch().copyWith(primary: mainColor),
-        //set default text color to fontColor
-        textTheme: TextTheme(
-          bodyText1: TextStyle(color: fontColor),
-          bodyText2: TextStyle(color: fontColor),
-        ),
-      ),
+      theme: lightThemeData,
+      darkTheme: darkThemeData,
+      themeMode: ThemeMode.light,
       initialRoute: Routes.home,
       getPages: [
         GetPage(

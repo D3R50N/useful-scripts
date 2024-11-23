@@ -1,3 +1,3 @@
 @echo off
-cp "C:\Script\flutter-template\assets\fonts" -r assets
-add-font Alexandria ; & add-font Kanit ; & add-font Marhey ; & add-font RubikGlitch
+xcopy "%DEV%\scripts\flutter-template\assets\fonts" assets/fonts /y /s /i /e >NUL
+add-font Lato -r -bl -b -l

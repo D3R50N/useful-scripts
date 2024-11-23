@@ -1,2 +1,2 @@
-rm -f -r C:\Script\test
-mkdir C:\Script\test
+rm -f -r %DEV%\scripts\test
+mkdir %DEV%\scripts\test
