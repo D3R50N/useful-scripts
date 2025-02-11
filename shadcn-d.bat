@@ -1,0 +1,1 @@
+ pnpm dlx shadcn@latest add button card input label tabs navigation-menu

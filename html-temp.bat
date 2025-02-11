@@ -1,2 +1,2 @@
 @echo off
-cp "%DEV%\scripts\html template" -r -i -T .
+xcopy "%DEV%\scripts\html template" . /y /s /i /e >NUL

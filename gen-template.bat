@@ -7,4 +7,4 @@ echo "Ajout des assets par defaut..."
 call add-a 
 call add-a images/
 echo "Ajout des packages par defaut..."
-flutter pub add flutter_launcher_icons flutter_native_splash get gap flutter_animate font_awesome_flutter flutter_animate
+flutter pub add flutter_launcher_icons flutter_native_splash get gap flutter_animate font_awesome_flutter flutter_animate shared_preferences

@@ -55,15 +55,13 @@ function writeMain() {
 
     var route = args[0];
     let newFileContent = fileContent.replace(
-      `
-        GetPage(`,
-      `
-        GetPage(
-          name: Routes.${route},
-          page: () => const ${capitalize(route)}Page(),
-          binding: ${capitalize(route)}Binding(),
-        ),
-        GetPage(`
+      `GetPage(`,
+      `GetPage(
+              name: Routes.${route},
+              page: () => const ${capitalize(route)}Page(),
+              binding: ${capitalize(route)}Binding(),
+            ),
+            GetPage(`
     );
 
     let dependencyMark = "import 'package:get/get.dart';";
