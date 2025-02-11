@@ -1,5 +1,6 @@
 ignore/
 js/help/
+js/commiter/
 # Logs
 logs
 *.log
